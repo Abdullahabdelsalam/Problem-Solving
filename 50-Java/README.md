@@ -534,29 +534,171 @@ class Practices {
    } 
 } 
 ```
-####
+#### 26. Print prime numbers.
 
 ```java
+import java.util.*; 
+  
+class Practices { 
+   public static void main(String args[]) 
+   { 
+      int n, status = 1, num = 3; 
+  
+      Scanner in = new Scanner(System.in); 
+      System.out.println("Enter the number of prime numbers you want"); 
+      n = in.nextInt(); 
+  
+      if (n >= 1) 
+      { 
+         System.out.println("First "+n+" prime numbers are :-"); 
+         System.out.println(2); 
+      } 
+  
+      for ( int count = 2 ; count <=n ;  ) 
+      { 
+         for ( int j = 2 ; j <= Math.sqrt(num) ; j++ ) 
+         { 
+            if ( num%j == 0 ) 
+            { 
+               status = 0; 
+               break; 
+            } 
+         } 
+         if ( status != 0 ) 
+         { 
+            System.out.println(num); 
+            count++; 
+         }
+	  status = 1; 
+	         num++; 
+	      }          
+        } 
+ }  
+```
+#### 27. Check no is Armstrong or not.
+
+```java
+import java.util.Scanner; 
+  
+class Practices { 
+   public static void main(String args[]) 
+   { 
+      int n, sum = 0, temp, remainder, digits = 0; 
+  
+      Scanner in = new Scanner(System.in); 
+      System.out.println("Input a number to check if it is an Armstrong number");       
+      n = in.nextInt(); 
+      temp = n; 
+      // Count number of digits 
+      while (temp != 0) { 
+         digits++; 
+         temp = temp/10; 
+      } 
+      temp = n; 
+      while (temp != 0) { 
+         remainder = temp%10; 
+         sum = sum + power(remainder, digits); 
+         temp = temp/10; 
+      } 
+  
+      if (n == sum) 
+         System.out.println(n + " is an Armstrong number."); 
+      else 
+         System.out.println(n + " is not an Armstrong number.");          
+   } 
+  
+   static int power(int n, int r) { 
+      int c, p = 1; 
+  
+      for (c = 1; c <= r; c++)  
+         p = p*n; 
+  
+      return p;
+   } 
+}
 
 ```
-####
+#### 28. Print Floyd’s Triangle.
 
 ```java
-
+import java.util.Scanner; 
+  
+class Practices { 
+   public static void main(String args[]) 
+   { 
+      int n, num = 1, c, d; 
+      Scanner in = new Scanner(System.in); 
+  
+      System.out.println("Enter the number of rows of floyd's triangle you want"); 
+      n = in.nextInt(); 
+  
+      System.out.println("Floyd's triangle :-"); 
+  
+      for ( c = 1 ; c <= n ; c++ ) 
+      { 
+         for ( d = 1 ; d <= c ; d++ ) 
+         { 
+            System.out.print(num+" "); 
+            num++; 
+         } 
+  
+         System.out.println(); 
+      } 
+   } 
+}
 ```
-####
+#### 29. Find All substring of string.
 
 ```java
-
+import java.util.Scanner; 
+  
+class Practices { 
+   public static void main(String args[]) 
+   { 
+      String string, sub; 
+      int i, c, length; 
+  
+      Scanner in = new Scanner(System.in); 
+      System.out.println("Enter a string to print it's all substrings"); 
+      string  = in.nextLine(); 
+  
+      length = string.length();
+      System.out.println("Substrings of \""+string+"\" are :-"); 
+	for( c = 0 ; c < length ; c++ ) { 
+		for( i = 1 ; i <= length - c ; i++ ) { 
+		sub = string.substring(c, c+i); 
+		System.out.println(sub); 
+		} 
+	} 
+     }
+} 
 ```
-####
+#### 30. Print reverse string.
 
 ```java
-
-```
-####
-
-```java
+ import java.util.*; 
+class Practices { 
+	public static void main(String args[]) 
+	{ 
+	String original, reverse = ""; 
+	Scanner in = new Scanner(System.in); 
+	Program 
+	System.out.println("Enter a string to reverse"); 
+	original = in.nextLine(); 
+	int length = original.length(); 
+	for ( int i = length - 1 ; i >= 0 ; i-- ) 
+	reverse = reverse + original.charAt(i); 
+	} 
+	System.out.println("Reverse of entered string is: "+reverse); 
+} 
+//Using Internal java Methog 
+class InvertString { 
+	public static void main(String args[]) 
+	{ 
+	StringBuffer a = new StringBuffer("Java programming is fun"); 
+	System.out.println(a.reverse()); 
+	} 
+} 
 
 ```
 ####

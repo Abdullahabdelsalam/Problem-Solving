@@ -12,7 +12,7 @@ System.out.println("Hello World by Technolamror");
 } 
 } 
 ```
-#### 2. Print Integer in java. 
+#### 2. Print Integer. 
 
 ```java
 class Practices{ 
@@ -25,7 +25,7 @@ System.out.println(c);
 } 
 } 
 ```
-#### 3. Command Line Argument in java .
+#### 3. Command Line Argument.
 
 ```java
 class Practices{
@@ -35,7 +35,7 @@ class Practices{
 	}
 }
 ```
-#### 4. How to get Using input using Scanner Program in java .
+#### 4. How to get Using input using Scanner.
 
 ```java
 import java.util.Scanner; 
@@ -63,7 +63,7 @@ class  Practices{
    } 
 } 
 ```
-#### 5. How to convert Fahrenheit  to Celsius Program in java.
+#### 5. How to convert Fahrenheit  to Celsius.
 
 ```java
 import java.util.*; 
@@ -83,7 +83,7 @@ class  Practices{
   } 
 } 
 ```
-#### 6. How to swap 2 using 3rd variable Program in java. 
+#### 6. How to swap 2 using 3rd variable. 
 
 ```java
 import java.util.Scanner; 
@@ -108,7 +108,7 @@ class Practices{
    } 
 } 
 ```
-#### 7. How to swap 2 no without using 3rd variable Program in java. 
+#### 7. How to swap 2 no without using 3rd variable. 
 
 ```java
 import java.util.Scanner; 
@@ -130,7 +130,7 @@ class Practices{
    } 
 } 
 ```
-#### 8. How to add two number  Program in java.
+#### 8. How to add two number.
 
 ```java
  import java.util.Scanner; 
@@ -147,7 +147,7 @@ public static void main(String args[])
    } 
 } 
 ```
-#### 9. Find Largest  no in java Program .
+#### 9. Find Largest  no.
 
 ```java
 import java.util.Scanner; 
@@ -174,7 +174,7 @@ class Practices{
    } 
 } 
 ```
-#### 10. If Else clause in java.
+#### 10. If Else clause.
 
 ```java
 class Practices{ 
@@ -214,7 +214,7 @@ class  Practices{
   } 
 } 
 ```
-#### 12.   Nested If Else clause in java  
+#### 12.   Nested If Else clause. 
 
 ```java
 import java.util.Scanner; 
@@ -252,7 +252,7 @@ class Practices{
   } 
 } 
 ```
-#### 13. How to check Odd and Even Number in java. 
+#### 13. How to check Odd and Even Number.
 
 ```java
 import java.util.Scanner; 
@@ -272,7 +272,7 @@ class Practices{
    } 
 } 
 ```
-#### 14. Find factorial for given no Program in Java 
+#### 14. Find factorial for given.
 
 ```java
 import java.util.Scanner; 
@@ -322,7 +322,7 @@ class Practices{
   } 
 } 
 ```
-#### 15. How to complete 2 string  in Java program
+#### 15. How to complete 2 string.
 
 ```java
 import java.util.Scanner; 
@@ -347,7 +347,7 @@ class Practices{
    } 
 } 
 ```
-#### 16.Simple For  Loop Program in Java 
+#### 16.Simple For  Loop.
 
 ```java
 class Practices{ 
@@ -360,7 +360,7 @@ class Practices{
   } 
 } 
 ```
-#### 17.Print Star console using Loop 
+#### 17.Print Star console using Loop.
 
 ```java
 class Practices{ 
@@ -376,7 +376,7 @@ class Practices{
   } 
 }
 ```
-####  18.Print Star console using Loop
+####  18.Print Star console using Loop.
 
 ```java
 class import java.util.Scanner; 
@@ -394,7 +394,7 @@ class Practices {
 }
  
 ```
-#### 19.While loop Program in java
+#### 19.While loop.
 
 ```java
  import java.util.Scanner; 
@@ -411,7 +411,7 @@ class Practices {
 	}
 } 
 ```
-#### 20.Print Reverse number in  java program
+#### 20.Print Reverse number.
 
 ```java
 import java.util.Scanner; 
@@ -436,6 +436,109 @@ class Practices{
    } 
 }
 ```
+#### 21.While loop using break. 
+
+```java
+import java.util.Scanner; 
+  
+class Practices { 
+  public static void main(String[] args) { 
+    int n; 
+    Scanner input = new Scanner(System.in); 
+    while (true) { 
+      System.out.println("Input an integer"); 
+      n = input.nextInt(); 
+      if (n == 0) { 
+        break; 
+      } 
+      System.out.println("You entered " + n); 
+    } 
+  } 
+} 
+```
+#### 22.While loop using break and continue.
+
+```java
+import java.util.Scanner;  
+class Practices { 
+  public static void main(String[] args) { 
+    int n; 
+    Scanner input = new Scanner(System.in); 
+    while (true) { 
+      System.out.println("Input an integer"); 
+      n = input.nextInt(); 
+      if (n != 0) { 
+        System.out.println("You entered " + n); 
+        continue; 
+      } 
+      else { 
+        break; 
+      } 
+    } 
+  } 
+} 
+```
+#### 23.Print all alphabet using for loop.
+
+```java
+class Practices { 
+   public static void main(String args[]) 
+   { 
+      char ch; 
+      for( ch = 'a' ; ch <= 'z' ; ch++ ) 
+         System.out.println(ch); 
+   } 
+} 
+```
+#### 24. Enhance loop.
+
+```java
+class EnhancedForLoop { 
+  public static void main(String[] args) { 
+    int primes[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29}; 
+    for (int t: primes) { 
+      System.out.println(t);  
+    } 
+  } 
+}
+```
+##### Another sol:
+```java
+//For String 
+class Practices { 
+  public static void main(String[] args) { 
+    String languages[] = { "C", "C++", "Java", "Python", "Ruby"}; 
+  
+    for (String sample: languages) { 
+      System.out.println(sample); 
+    } 
+  } 
+}
+```
+#### 25.Print Multiplication table. 
+
+```java
+import java.util.Scanner; 
+  
+class Practices { 
+   public static void main(String args[]) 
+   { 
+      int n, c; 
+      System.out.println("Enter an integer to print it's multiplication table"); 
+      Scanner in = new Scanner(System.in); 
+      n = in.nextInt(); 
+      System.out.println("Multiplication table of "+n+" is :-"); 
+  
+      for ( c = 1 ; c <= 10 ; c++ ) 
+         System.out.println(n+"*"+c+" = "+(n*c)); 
+   } 
+} 
+```
+####
+
+```java
+
+```
 ####
 
 ```java
@@ -446,3 +549,24 @@ class Practices{
 ```java
 
 ```
+####
+
+```java
+
+```
+####
+
+```java
+
+```
+####
+
+```java
+
+```
+####
+
+```java
+
+```
+

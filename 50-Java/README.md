@@ -427,24 +427,18 @@ public static void main(String args[]){
       System.out.println("Enter the number of prime numbers you want"); 
       n = in.nextInt(); 
   
-      if (n >= 1) 
-      { 
+      if (n >= 1) { 
          System.out.println("First "+n+" prime numbers are :-"); 
          System.out.println(2); 
-      } 
-  
-      for ( int count = 2 ; count <=n ;  ) 
-      { 
-         for ( int j = 2 ; j <= Math.sqrt(num) ; j++ ) 
-         { 
-            if ( num%j == 0 ) 
-            { 
+      }  
+      for ( int count = 2 ; count <=n ;  ) { 
+         for ( int j = 2 ; j <= Math.sqrt(num) ; j++ ) { 
+            if ( num%j == 0 ) { 
                status = 0; 
                break; 
             } 
          } 
-         if ( status != 0 ) 
-         { 
+         if ( status != 0 ) { 
             System.out.println(num); 
             count++; 
          }
@@ -474,8 +468,7 @@ public static void main(String args[]){
          remainder = temp%10; 
          sum = sum + power(remainder, digits); 
          temp = temp/10; 
-      } 
-  
+      }  
       if (n == sum) 
          System.out.println(n + " is an Armstrong number."); 
       else 
@@ -504,10 +497,8 @@ public static void main(String args[]){
   
       System.out.println("Floyd's triangle :-"); 
   
-      for ( c = 1 ; c <= n ; c++ ) 
-      { 
-         for ( d = 1 ; d <= c ; d++ ) 
-         { 
+      for ( c = 1 ; c <= n ; c++ ) { 
+         for ( d = 1 ; d <= c ; d++ ) { 
             System.out.print(num+" "); 
             num++; 
          } 

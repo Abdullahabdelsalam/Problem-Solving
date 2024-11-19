@@ -5,11 +5,9 @@
 #### 1. Simple Java Program.
 
 ``` java
- class Practices{ 
 public static void main(String args[]) 
 { 
 System.out.println("Hello World by Technolamror"); 
-} 
 } 
 ```
 #### 2. Print Integer. 

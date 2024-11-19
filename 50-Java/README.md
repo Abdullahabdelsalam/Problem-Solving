@@ -553,6 +553,198 @@ public static void main(String args[]){
 	}  
 
 ```
+#### 31.Check Given No is palindrome or Not.
+
+```java
+ public static void main(String args[]) 
+   { 
+      String original, reverse = ""; 
+      Scanner in = new Scanner(System.in); 
+  
+      System.out.println("Enter a string to check if it is a palindrome"); 
+      original = in.nextLine(); 
+      int length = original.length(); 
+      for ( int i = length - 1; i >= 0; i-- ) 
+         reverse = reverse + original.charAt(i); 
+      if (original.equals(reverse)) 
+         System.out.println("Entered string is a palindrome."); 
+      else 
+         System.out.println("Entered string is not a palindrome."); 
+   }
+```
+##### Another Method:
+```java
+ public static void main(String args[]) 
+  { 
+    String inputString; 
+    Scanner in = new Scanner(System.in); 
+  
+    System.out.println("Input a string"); 
+    inputString = in.nextLine(); 
+  
+    int length  = inputString.length(); 
+    int i, begin, end, middle; 
+  
+    begin  = 0; 
+    end    = length - 1; 
+    middle = (begin + end)/2; 
+  
+    for (i = begin; i <= middle; i++) { 
+      if (inputString.charAt(begin) == inputString.charAt(end)) { 
+        begin++; 
+        end--; 
+      } 
+      else { 
+        break; 
+      } 
+    }
+ if (i == middle + 1) { 
+      System.out.println("Palindrome"); 
+    }else { 
+      System.out.println("Not a palindrome"); 
+    }   
+  }
+```
+#### 32.How to add two matrix.
+
+```java
+ public static void main(String args[]) 
+   { 
+      int m, n, c, d; 
+      Scanner in = new Scanner(System.in); 
+  
+      System.out.println("Enter the number of rows and columns of matrix"); 
+      m = in.nextInt(); 
+      n  = in.nextInt(); 
+  
+      int first[][] = new int[m][n]; 
+      int second[][] = new int[m][n]; 
+      int sum[][] = new int[m][n]; 
+  
+      System.out.println("Enter the elements of first matrix"); 
+  
+      for (  c = 0 ; c < m ; c++ ) 
+         for ( d = 0 ; d < n ; d++ ) 
+            first[c][d] = in.nextInt(); 
+  
+      System.out.println("Enter the elements of second matrix"); 
+  
+      for ( c = 0 ; c < m ; c++ ) 
+         for ( d = 0 ; d < n ; d++ ) 
+            second[c][d] = in.nextInt(); 
+  
+      for ( c = 0 ; c < m ; c++ ) 
+         for ( d = 0 ; d < n ; d++ ) 
+             sum[c][d] = first[c][d] + second[c][d];  //replace '+' with '-' 
+to subtract matrices 
+  
+      System.out.println("Sum of entered matrices:-"); 
+  
+      for ( c = 0 ; c < m ; c++ ) 
+      { 
+         for ( d = 0 ; d < n ; d++ ) 
+            System.out.print(sum[c][d]+"\t"); 
+  
+         System.out.println();
+      } 
+   } 
+```
+#### 33.How to multiply two matrix.
+
+```java
+ public static void main(String args[]) 
+   { 
+      int m, n, p, q, sum = 0, c, d, k; 
+      Scanner in = new Scanner(System.in); 
+      System.out.println("Enter the number of rows and columns of first matrix"); 
+      m = in.nextInt(); 
+      n = in.nextInt(); 
+      int first[][] = new int[m][n]; 
+      System.out.println("Enter the elements of first matrix"); 
+      for ( c = 0 ; c < m ; c++ ) 
+         for ( d = 0 ; d < n ; d++ ) 
+            first[c][d] = in.nextInt(); 
+      System.out.println("Enter the number of rows and columns of second matrix"); 
+      p = in.nextInt(); 
+      q = in.nextInt(); 
+      if ( n != p ) 
+         System.out.println("Matrices with entered orders can't be multiplied with each other."); 
+      else { 
+         int second[][] = new int[p][q]; 
+         int multiply[][] = new int[m][q]; 
+         System.out.println("Enter the elements of second matrix"); 
+         for ( c = 0 ; c < p ; c++ ) 
+            for ( d = 0 ; d < q ; d++ ) 
+               second[c][d] = in.nextInt(); 
+         for ( c = 0 ; c < m ; c++ ) { 
+            for ( d = 0 ; d < q ; d++ ) {    
+               for ( k = 0 ; k < p ; k++ ) {
+            sum = sum + first[c][k]*second[k][d]; 
+               } 
+               multiply[c][d] = sum; 
+               sum = 0; 
+            } 
+         } 
+         System.out.println("Product of entered matrices:-"); 
+         for ( c = 0 ; c < m ; c++ ) { 
+            for ( d = 0 ; d < q ; d++ ) 
+               System.out.print(multiply[c][d]+"\t"); 
+            System.out.print("\n"); 
+         } 
+      } 
+   } 
+```
+#### 34. How to get transpose of matrix.
+
+```java
+ public static void main(String args[]) 
+   { 
+      int m, n, c, d; 
+      Scanner in = new Scanner(System.in); 
+      System.out.println("Enter the number of rows and columns of matrix"); 
+      m = in.nextInt(); 
+      n = in.nextInt(); 
+      int matrix[][] = new int[m][n]; 
+      System.out.println("Enter the elements of matrix"); 
+      for ( c = 0 ; c < m ; c++ ) 
+         for ( d = 0 ; d < n ; d++ ) 
+            matrix[c][d] = in.nextInt(); 
+      int transpose[][] = new int[n][m]; 
+      for ( c = 0 ; c < m ; c++ ) { 
+         for ( d = 0 ; d < n ; d++ )                
+            transpose[d][c] = matrix[c][d]; 
+      }
+       System.out.println("Transpose of entered matrix:-"); 
+      for ( c = 0 ; c < n ; c++ ) { 
+        for ( d = 0 ; d < m ; d++ ) 
+	System.out.print(transpose[c][d]+"\t"); 
+	System.out.print("\n"); 
+      } 
+   } 
+```
+#### 35. How to compare 2 string.
+
+```java
+public static void main(String args[]){   
+	String s1="hello";   
+	String s2="hello";   
+	String s3="meklo";   
+	String s4="hemlo";   
+	System.out.println(s1.compareTo(s2));   
+	System.out.println(s1.compareTo(s3));   
+	System.out.println(s1.compareTo(s4));   
+}
+```
+####
+
+```java
+
+```
+####
+
+```java
+
+```
 ####
 
 ```java

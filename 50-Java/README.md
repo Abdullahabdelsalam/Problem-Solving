@@ -339,9 +339,6 @@ public static void main(String args[]){
 #### 21.While loop using break. 
 
 ```java
-import java.util.Scanner; 
-  
-class Practices { 
   public static void main(String[] args) { 
     int n; 
     Scanner input = new Scanner(System.in); 
@@ -353,14 +350,11 @@ class Practices {
       } 
       System.out.println("You entered " + n); 
     } 
-  } 
-} 
+  }  
 ```
 #### 22.While loop using break and continue.
 
-```java
-import java.util.Scanner;  
-class Practices { 
+```java 
   public static void main(String[] args) { 
     int n; 
     Scanner input = new Scanner(System.in); 
@@ -375,37 +369,30 @@ class Practices {
         break; 
       } 
     } 
-  } 
-} 
+  }  
 ```
 #### 23.Print all alphabet using for loop.
 
 ```java
-class Practices { 
    public static void main(String args[]) 
    { 
       char ch; 
       for( ch = 'a' ; ch <= 'z' ; ch++ ) 
          System.out.println(ch); 
-   } 
-} 
+   }  
 ```
 #### 24. Enhance loop.
 
 ```java
-class EnhancedForLoop { 
   public static void main(String[] args) { 
     int primes[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29}; 
     for (int t: primes) { 
       System.out.println(t);  
     } 
   } 
-}
 ```
 ##### Another sol:
-```java
-//For String 
-class Practices { 
+```java 
   public static void main(String[] args) { 
     String languages[] = { "C", "C++", "Java", "Python", "Ruby"}; 
   
@@ -413,14 +400,10 @@ class Practices {
       System.out.println(sample); 
     } 
   } 
-}
 ```
 #### 25.Print Multiplication table. 
 
 ```java
-import java.util.Scanner; 
-  
-class Practices { 
    public static void main(String args[]) 
    { 
       int n, c; 
@@ -432,14 +415,10 @@ class Practices {
       for ( c = 1 ; c <= 10 ; c++ ) 
          System.out.println(n+"*"+c+" = "+(n*c)); 
    } 
-} 
 ```
 #### 26. Print prime numbers.
 
 ```java
-import java.util.*; 
-  
-class Practices { 
    public static void main(String args[]) 
    { 
       int n, status = 1, num = 3; 
@@ -472,15 +451,11 @@ class Practices {
 	  status = 1; 
 	         num++; 
 	      }          
-        } 
- }  
+        }  
 ```
 #### 27. Check no is Armstrong or not.
 
-```java
-import java.util.Scanner; 
-  
-class Practices { 
+```java 
    public static void main(String args[]) 
    { 
       int n, sum = 0, temp, remainder, digits = 0; 
@@ -515,15 +490,10 @@ class Practices {
   
       return p;
    } 
-}
-
 ```
 #### 28. Print Floyd’s Triangle.
 
 ```java
-import java.util.Scanner; 
-  
-class Practices { 
    public static void main(String args[]) 
    { 
       int n, num = 1, c, d; 
@@ -545,14 +515,10 @@ class Practices {
          System.out.println(); 
       } 
    } 
-}
 ```
 #### 29. Find All substring of string.
 
-```java
-import java.util.Scanner; 
-  
-class Practices { 
+```java 
    public static void main(String args[]) 
    { 
       String string, sub; 
@@ -571,13 +537,10 @@ class Practices {
 		} 
 	} 
      }
-} 
 ```
 #### 30. Print reverse string.
 
 ```java
- import java.util.*; 
-class Practices { 
 	public static void main(String args[]) 
 	{ 
 	String original, reverse = ""; 
@@ -592,13 +555,11 @@ class Practices {
 	System.out.println("Reverse of entered string is: "+reverse); 
 } 
 //Using Internal java Methog 
-class InvertString { 
 	public static void main(String args[]) 
 	{ 
 	StringBuffer a = new StringBuffer("Java programming is fun"); 
 	System.out.println(a.reverse()); 
-	} 
-} 
+	}  
 
 ```
 ####

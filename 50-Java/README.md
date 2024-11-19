@@ -13,32 +13,24 @@ System.out.println("Hello World by Technolamror");
 #### 2. Print Integer. 
 
 ```java
-class Practices{ 
 public static void main(String[] arguments) { 
-int c; 
-for (c = 1; c <= 10; c++)
-{ 
-System.out.println(c); 
-} 
-} 
+	int c; 
+	for (c = 1; c <= 10; c++){ 
+		System.out.println(c); 
+	} 
 } 
 ```
 #### 3. Command Line Argument.
 
 ```java
-class Practices{
 	public static void main(String[] args)
 	{
 		System.out.println(args[0]);
 	}
-}
 ```
 #### 4. How to get Using input using Scanner.
 
 ```java
-import java.util.Scanner; 
-  
-class  Practices{ 
    public static void main(String args[])
      { 
       int a; 
@@ -58,17 +50,12 @@ class  Practices{
       System.out.println("Enter a float"); 
       b = in.nextFloat(); 
       System.out.println("You entered float "+b);    
-   } 
-} 
+   }  
 ```
 #### 5. How to convert Fahrenheit  to Celsius.
 
 ```java
-import java.util.*; 
-  
-class  Practices{ 
-  public static void main(String[] args)
-   { 
+  public static void main(String[] args) { 
     float temperatue; 
     Scanner in = new Scanner(System.in);       
   
@@ -78,17 +65,12 @@ class  Practices{
     temperatue = ((temperatue - 32)*5)/9; 
   
     System.out.println("Temperatue in Celsius = " + temperatue); 
-  } 
-} 
+  }  
 ```
 #### 6. How to swap 2 using 3rd variable. 
 
-```java
-import java.util.Scanner; 
-  
-class Practices{ 
-   public static void main(String args[])
-    { 
+```java 
+   public static void main(String args[]){ 
       int x, y, temp; 
       System.out.println("Enter x and y"); 
       Scanner in = new Scanner(System.in); 
@@ -103,16 +85,12 @@ class Practices{
       y = temp; 
   
       System.out.println("After Swapping\nx = "+x+"\ny = "+y); 
-   } 
-} 
+   }  
 ```
 #### 7. How to swap 2 no without using 3rd variable. 
 
-```java
-import java.util.Scanner; 
-class Practices{ 
-   public static void main(String args[])
-    { 
+```java 
+   public static void main(String args[]) { 
       int x, y; 
       System.out.println("Enter x and y"); 
       Scanner in = new Scanner(System.in); 
@@ -125,16 +103,12 @@ class Practices{
        y = x - y; 
        x = x - y; 
       System.out.println("After Swapping\nx = "+x+"\ny = "+y); 
-   } 
-} 
+   }  
 ```
 #### 8. How to add two number.
 
 ```java
- import java.util.Scanner; 
-class Practices{ 
-public static void main(String args[])
-    { 
+public static void main(String args[]){ 
      int x, y, z; 
      System.out.println("Enter two integers to calculate their sum "); 
      Scanner in = new Scanner(System.in); 
@@ -142,17 +116,12 @@ public static void main(String args[])
      y = in.nextInt(); 
      z = x + y; 
      System.out.println("Sum of entered integers = "+z); 
-   } 
-} 
+   }  
 ```
 #### 9. Find Largest  no.
 
-```java
-import java.util.Scanner; 
-  
-class Practices{ 
-   public static void main(String args[]) 
-   { 
+```java 
+   public static void main(String args[]) { 
       int x, y, z; 
       System.out.println("Enter three integers "); 
       Scanner in = new Scanner(System.in); 
@@ -169,29 +138,23 @@ class Practices{
          System.out.println("Third number is largest."); 
       else    
          System.out.println("Entered numbers are not distinct."); 
-   } 
-} 
+   }  
 ```
 #### 10. If Else clause.
 
 ```java
-class Practices{ 
   public static void main(String[] args) { 
     boolean learning = true; 
     if (learning) { 
       System.out.println("Java programmer"); 
-    } 
-    else { 
+    }else { 
       System.out.println("What are you doing here?"); 
     } 
   } 
-}
 ```
 #### 11. If Else clause in java- Program 2 
 
-```java
-import java.util.Scanner;   
-class  Practices{ 
+```java   
   public static void main(String[] args) { 
     int marksObtained, passingMarks; 
   
@@ -205,19 +168,14 @@ class  Practices{
   
     if (marksObtained >= passingMarks) { 
       System.out.println("You passed the exam."); 
-    } 
-    else { 
+    } else { 
       System.out.println("Unfortunately you failed to pass the exam."); 
     } 
   } 
-} 
 ```
 #### 12.   Nested If Else clause. 
 
 ```java
-import java.util.Scanner; 
-  
-class Practices{ 
   public static void main(String[] args) { 
     int marksObtained, passingMarks; 
     char grade; 
@@ -234,7 +192,7 @@ class Practices{
   
       if (marksObtained > 90)  
         grade = 'A';
- else if (marksObtained > 75) 
+      else if (marksObtained > 75) 
         grade = 'B'; 
       else if (marksObtained > 60) 
         grade = 'C'; 
@@ -248,14 +206,10 @@ class Practices{
       System.out.println("You failed and your grade is " + grade); 
     } 
   } 
-} 
 ```
 #### 13. How to check Odd and Even Number.
 
 ```java
-import java.util.Scanner; 
-  
-class Practices{ 
    public static void main(String args[]) 
    { 
       int x; 
@@ -267,17 +221,12 @@ class Practices{
          System.out.println("You entered an even number."); 
       else 
          System.out.println("You entered an odd number."); 
-   } 
-} 
+   }  
 ```
 #### 14. Find factorial for given.
 
 ```java
-import java.util.Scanner; 
-  
-class Practices{ 
-   public static void main(String args[]) 
-   { 
+   public static void main(String args[]) { 
       int n, c, fact = 1; 
   
       System.out.println("Enter an integer to calculate it's factorial"); 
@@ -293,41 +242,12 @@ class Practices{
   
          System.out.println("Factorial of "+n+" is = "+fact); 
       } 
-   } 
-}
-//Calculate factorial for large No 
-import java.util.Scanner; 
-import java.math.BigInteger; 
-  
-class Practices{ 
-  public static void main(String args[]) 
-  { 
-    int n, c; 
-    BigInteger inc = new BigInteger("1"); 
-    BigInteger fact = new BigInteger("1"); 
-  
-    Scanner input = new Scanner(System.in); 
-  
-    System.out.println("Input an integer"); 
-    n = input.nextInt(); 
-  
-    for (c = 1; c <= n; c++) { 
-      fact = fact.multiply(inc); 
-      inc = inc.add(BigInteger.ONE); 
-    } 
-  
-    System.out.println(n + "! = " + fact); 
-  } 
-} 
+   }  
 ```
 #### 15. How to complete 2 string.
 
 ```java
-import java.util.Scanner; 
-  
-class Practices{ 
-   public static void main(String args[]) 
-   { 
+   public static void main(String args[]) { 
       String s1, s2; 
       Scanner in = new Scanner(System.in); 
   
@@ -343,25 +263,20 @@ class Practices{
       else    
          System.out.println("Both strings are equal."); 
    } 
-} 
 ```
 #### 16.Simple For  Loop.
 
 ```java
-class Practices{ 
   public static void main(String[] args) { 
     int c; 
-  
     for (c = 1; c <= 10; c++) { 
       System.out.println(c); 
     } 
   } 
-} 
 ```
 #### 17.Print Star console using Loop.
 
-```java
-class Practices{ 
+```java 
   public static void main(String[] args) { 
     int row, numberOfStars; 
   
@@ -372,14 +287,10 @@ class Practices{
       System.out.println(); // Go to next line 
     } 
   } 
-}
 ```
 ####  18.Print Star console using Loop.
 
 ```java
-class import java.util.Scanner; 
-  
-class Practices { 
 	public static void main(String[] args) { 
 	int row, numberOfStars; 
 	for (row = 1; row <= 10; row++) { 
@@ -389,14 +300,10 @@ class Practices {
 			System.out.println();
 		}
 	}
-}
- 
 ```
 #### 19.While loop.
 
 ```java
- import java.util.Scanner; 
-class Practices {
 	public static void main(String[] args) { 
 		int n; 
 		Scanner input = new Scanner(System.in); 
@@ -407,14 +314,10 @@ class Practices {
 		} 
         System.out.println("Out of loop");
 	}
-} 
 ```
 #### 20.Print Reverse number.
 
 ```java
-import java.util.Scanner; 
-  
-class Practices{ 
    public static void main(String args[]) 
    { 
       int n, reverse = 0; 
@@ -432,7 +335,6 @@ class Practices{
   
       System.out.println("Reverse of entered number is "+reverse); 
    } 
-}
 ```
 #### 21.While loop using break. 
 

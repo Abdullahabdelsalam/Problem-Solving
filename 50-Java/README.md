@@ -847,6 +847,45 @@ public static void main(String args[]){
     System.out.println(u); 
   } 
 ```
+#### 44. How Static block working.
+
+```java
+ public static void main(String[] args) { 
+    System.out.println("Main method is executed."); 
+  } 
+  
+  static { 
+    System.out.println("Static block is executed before main method."); 
+  } 
+} 
+//Static Block Application …. We need to open Program in speciif window 
+class StaticBlock { 
+  public static void main(String[] args) { 
+    System.out.println("You are using Windows_NT operating system."); 
+  } 
+  
+  static { 
+    String os = System.getenv("OS"); 
+    if (os.equals("Windows_NT") != true) { 
+      System.exit(1); 
+    } 
+  }
+```
+#### 45.Difference between Static and Instance method working.
+
+```java
+ public static void main(String[] args) { 
+    display();  //calling without object
+    Difference t = new Difference(); 
+    t.show();  //calling using object 
+} 
+static void display() { 
+    System.out.println("Programming is amazing."); 
+} 
+void show(){ 
+    System.out.println("Java is awesome."); 
+} 
+```
 ####
 
 ```java

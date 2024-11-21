@@ -762,6 +762,91 @@ public static void main(String args[]){
 	System.out.println(index4);//3   
 } 
 ```
+####  38. How to replace string with another string.
+
+```java
+public static void main(String args[]){   
+	String s1="My name is Rajendra. My name is lamror. My name is Technolamror.";   
+	String replaceString=s1.replaceAll("is","was");//replaces all occurrences of "is" to 
+	"was"   
+	System.out.println(replaceString);   
+}
+```
+#### 39. How to split string.
+
+```java
+public static void main(String args[]){   
+	String s1="java string split method by Technolamror";   
+	String[] words=s1.split("\\s");//splits the string based on whitespace   
+	//using java foreach
+	 loop to print elements of string array   
+	for(String w:words){   
+	System.out.println(w);   
+	}   
+}
+```
+#### 40. How to remove space in string both end.
+
+```java
+public static void main(String args[]){   
+	String s1="  hello string   ";   
+	System.out.println(s1+"Technolamror");//without trim()   
+	System.out.println(s1.trim()+"Technolamror");//with trim()   
+}
+```
+#### 41. How to convert all char in string lower case.
+
+```java
+public static void main(String args[]){   
+	String s1="TECHNOLAMROR by Rajendralamror HELLO stRIng";   
+	String s1lower=s1.toLowerCase();
+	System.out.println(s1lower);   
+}
+```
+#### 42. How to create method.
+
+```java
+ // Constructor method 
+  Methods() { 
+    System.out.println("Constructor method is called when an object of it's class is created"); 
+  } 
+  // Main method where program execution begins 
+  public static void main(String[] args) { 
+    staticMethod(); 
+    Methods object = new Methods(); 
+    object.nonStaticMethod(); 
+  } 
+  // Static method 
+  static void staticMethod() { 
+    System.out.println("Static method can be called without creating object"); 
+  } 
+  // Non static method 
+  void nonStaticMethod() { 
+    System.out.println("Non static method must be called by creating an object"); 
+  } 
+
+```
+#### 43. Find Length, Concatenate and Replace String.
+
+```java
+ public static void main(String args[]) 
+  { 
+    int n; 
+    String s = "Java programming", t = "", u = ""; 
+    System.out.println(s); 
+    // Find length of string
+     n = s.length(); 
+    System.out.println("Number of characters = " + n); 
+    // Replace characters in string 
+    t = s.replace("Java", "C++"); 
+    System.out.println(s); 
+    System.out.println(t); 
+    // Concatenating string with another string 
+    u = s.concat(" is fun"); 
+    System.out.println(s); 
+    System.out.println(u); 
+  } 
+```
 ####
 
 ```java

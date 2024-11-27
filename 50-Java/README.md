@@ -954,25 +954,46 @@ System.out.println("Constructor method called.");
     System.out.println("Language name: " + name); 
   } 
 ```
-####
+#### 49.Exception Handling.
 
 ```java
+ public static void main(String[] args) { 
+  int a, b, result; 
+  Scanner input = new Scanner(System.in); 
+  System.out.println("Input two integers");
+  a = input.nextInt(); 
+  b = input.nextInt(); 
+  
+  // try block 
+  
+  try { 
+    result  = a / b; 
+    System.out.println("Result = " + result); 
+  } 
+  
+  // catch block 
+  
+  catch (ArithmeticException e) { 
+    System.out.println("Exception caught: Division by zero."); 
+  } 
+  } 
+```
+#### 50.How to throw exception.
 
+```java
+ static void validate(int age){   
+     if(age<18)   
+      throw new ArithmeticException("not valid");   
+     else   
+      System.out.println("welcome to vote on Technolamror");   
+   }   
+   public static void main(String args[]){   
+      validate(13);   
+      System.out.println("rest of the code...");   
+  }  
 ```
 ####
 
 ```java
 
 ```
-####
-
-```java
-
-```
-####
-
-```java
-
-```
-
-

@@ -886,6 +886,79 @@ void show(){
     System.out.println("Java is awesome."); 
 } 
 ```
+#### 46.How to create Multiple class. 
+
+```java
+class Computer { 
+Computer() { 
+System.out.println("Constructor of Computer class."); 
+} 
+void computer_method() { 
+System.out.println("Power gone! Shut down your PC soon..."); 
+} 
+public static void main(String[] args) { 
+Computer my = new Computer(); 
+Laptop your = new Laptop(); 
+my.computer_method(); 
+your.laptop_method(); 
+} 
+} 
+class Laptop { 
+Laptop() { 
+System.out.println("Constructor of Laptop class."); 
+} 
+void laptop_method() { 
+System.out.println("99% Battery available."); 
+} 
+} 
+```
+
+#### 47.How to create constructor.
+
+```java
+Programming() { 
+System.out.println("Constructor method called."); 
+}
+  public static void main(String[] args) { 
+    Programming object = new Programming(); //creating object 
+  } 
+```
+#### 48.How to create constructor  overloading. 
+
+```java
+ String name; 
+  
+  Language() { 
+    System.out.println("Constructor method called."); 
+  } 
+  
+  Language(String t) { 
+    name = t; 
+  } 
+  
+  public static void main(String[] args) { 
+    Language cpp  = new Language(); 
+    Language java = new Language("Java"); 
+  
+    cpp.setName("C++"); 
+  
+    java.getName(); 
+    cpp.getName(); 
+  } 
+  
+  void setName(String t) { 
+    name = t; 
+  } 
+  
+  void getName() { 
+    System.out.println("Language name: " + name); 
+  } 
+```
+####
+
+```java
+
+```
 ####
 
 ```java
@@ -896,4 +969,10 @@ void show(){
 ```java
 
 ```
+####
+
+```java
+
+```
+
 
